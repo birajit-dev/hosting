@@ -63,21 +63,20 @@
 <body>
     <div class="d-flex">
         <div class="sidebar p-3">
-            <h2 class="h4 mb-4 text-center">Hosting Controller</h2>
+            <h4 class="h4 mb-4 text-center">Hosting Controller</h4>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a class="nav-link active rounded" href="#dashboard"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#domains"><i class="bi bi-globe me-2"></i>Domains</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#email"><i class="bi bi-envelope me-2"></i>Email</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#databases"><i class="bi bi-database me-2"></i>Databases</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#files"><i class="bi bi-folder me-2"></i>File Manager</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#settings"><i class="bi bi-gear me-2"></i>Settings</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#support"><i class="bi bi-question-circle me-2"></i>Support</a></li>
-                <li class="nav-item mb-2"><a class="nav-link rounded" href="#logout"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
+                <li class="nav-item mb-2"><a class="nav-link active rounded" href="/dashboard"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></li>
+    
+                <li class="nav-item mb-2"><a class="nav-link rounded" href="/billing"><i 
+                    class="bi bi-speedometer2 me-2"></i>Billing</a></li>
+    
+                <li class="nav-item mb-2"><a class="nav-link rounded" href="/support"><i class="bi bi-question-circle me-2"></i>Support</a></li>
+                <li class="nav-item mb-2"><a class="nav-link rounded" href="/"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
             </ul>
         </div>
         <div class="main-content p-4">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h1 class="h3">Welcome, John Doe</h1>
+                <h1 class="h3">Welcome, Darius</h1>
                 <button class="btn btn-primary" onclick="alert('cPanel login clicked')">
                     <i class="bi bi-box-arrow-up-right me-2"></i>cPanel Login
                 </button>
@@ -89,9 +88,9 @@
                             <h2 class="card-title h5 mb-3">Hosting Information</h2>
                             <p class="card-text"><i class="bi bi-hdd-rack me-2 text-primary"></i>Hosting Plan: Premium</p>
                             <p class="card-text"><i class="bi bi-calendar-check me-2 text-success"></i>Years of Hosting: 3</p>
-                            <p class="card-text"><i class="bi bi-calendar-x me-2 text-danger"></i>Expiration Date: 2024-12-31</p>
+                            <p class="card-text"><i class="bi bi-calendar-x me-2 text-danger"></i>Expiration Date: 2027-09-09</p>
                             <p class="card-text"><i class="bi bi-speedometer me-2 text-info"></i>Bandwidth: Unlimited</p>
-                            <p class="card-text"><i class="bi bi-cpu me-2 text-warning"></i>CPU Usage: 25%</p>
+                            <p class="card-text"><i class="bi bi-cpu me-2 text-warning"></i>CPU Usage: 0%</p>
                         </div>
                     </div>
                 </div>
@@ -99,13 +98,13 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h2 class="card-title h5 mb-3">Quick Stats</h2>
-                            <p class="card-text"><i class="bi bi-globe2 me-2 text-info"></i>Total Domains: 5</p>
-                            <p class="card-text"><i class="bi bi-check-circle me-2 text-success"></i>Active Domains: 4</p>
-                            <p class="card-text"><i class="bi bi-envelope me-2 text-primary"></i>Email Accounts: 10</p>
-                            <p class="card-text"><i class="bi bi-database me-2 text-danger"></i>Databases: 3</p>
-                            <p class="card-text"><i class="bi bi-hdd me-2 text-warning"></i>Disk Usage: 45%</p>
+                            <p class="card-text"><i class="bi bi-globe2 me-2 text-info"></i>Total Domains: 1</p>
+                            <p class="card-text"><i class="bi bi-check-circle me-2 text-success"></i>Active Domains: 0</p>
+                            <p class="card-text"><i class="bi bi-envelope me-2 text-primary"></i>Email Accounts: 1</p>
+                            <p class="card-text"><i class="bi bi-cpu me-2 me-2 text-danger"></i>Databases: 1</p>
+                            <p class="card-text"><i class="bi bi-hdd me-2 text-warning"></i>Disk Usage: 0%</p>
                             <div class="progress mt-2">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -127,50 +126,10 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>example1.com</td>
-                                    <td><span class="badge bg-success">Active</span></td>
-                                    <td>2024-06-30</td>
+                                    <td>apluslocators.com</td>
+                                    <td><span class="badge bg-info">Inactive</span></td>
+                                    <td>2027-09-09</td>
                                     <td><i class="bi bi-shield-check text-success"></i></td>
-                                    <td>
-                                        <button class="btn btn-sm btn-outline-primary">Manage</button>
-                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>example2.com</td>
-                                    <td><span class="badge bg-success">Active</span></td>
-                                    <td>2023-12-31</td>
-                                    <td><i class="bi bi-shield-check text-success"></i></td>
-                                    <td>
-                                        <button class="btn btn-sm btn-outline-primary">Manage</button>
-                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>example3.com</td>
-                                    <td><span class="badge bg-warning">Expiring Soon</span></td>
-                                    <td>2023-08-15</td>
-                                    <td><i class="bi bi-shield-x text-danger"></i></td>
-                                    <td>
-                                        <button class="btn btn-sm btn-outline-primary">Manage</button>
-                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>example4.com</td>
-                                    <td><span class="badge bg-success">Active</span></td>
-                                    <td>2025-01-01</td>
-                                    <td><i class="bi bi-shield-check text-success"></i></td>
-                                    <td>
-                                        <button class="btn btn-sm btn-outline-primary">Manage</button>
-                                        <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>example5.com</td>
-                                    <td><span class="badge bg-danger">Expired</span></td>
-                                    <td>2023-03-01</td>
-                                    <td><i class="bi bi-shield-x text-danger"></i></td>
                                     <td>
                                         <button class="btn btn-sm btn-outline-primary">Manage</button>
                                         <button class="btn btn-sm btn-outline-danger">Delete</button>
@@ -189,15 +148,15 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     New email account created
-                                    <span class="badge bg-primary rounded-pill">2 days ago</span>
+                                    <span class="badge bg-primary rounded-pill">0 days ago</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Database backup completed
-                                    <span class="badge bg-primary rounded-pill">5 days ago</span>
+                                    <span class="badge bg-primary rounded-pill">0 days ago</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    SSL certificate renewed for example1.com
-                                    <span class="badge bg-primary rounded-pill">1 week ago</span>
+                                    SSL certificate renewed for apluslocators.com
+                                    <span class="badge bg-primary rounded-pill">0 week ago</span>
                                 </li>
                             </ul>
                         </div>

@@ -20,6 +20,7 @@ app.get('/setting', hostingController.settingPage);
 app.get('/billing', hostingController.billingPage);
 app.get('/pay', hostingController.payPage);
 app.get('/support', hostingController.supportPage);
+app.get('/email', hostingController.emailPage);
 
 // Add domain route
 app.post('/add-domain', hostingController.addDomain);

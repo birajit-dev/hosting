@@ -33,3 +33,7 @@ exports.payPage = (req, res) => {
 exports.supportPage = (req, res) => {
     res.render('support'); // This renders the 'about.ejs' view
   };
+
+exports.emailPage = (req, res) => {
+    res.render('email'); // This renders the 'about.ejs' view
+}

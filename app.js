@@ -25,7 +25,7 @@ app.get('/support', hostingController.supportPage);
 app.post('/add-domain', hostingController.addDomain);
 
 // Start server
-const port = 3000;
+const port = 8888;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
